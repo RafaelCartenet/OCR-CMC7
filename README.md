@@ -13,7 +13,7 @@ Generate Labeled Data according to bank checks that you put in the trainingfiles
 Filenames must follow the name defined in parameters.py  
 Each digit is represented as a digitW*digitH vector, filed with 0 and 1, depending if the pixel is closer to black or white.  
 Use :  
-  'python toDataFile.py'
+  `python toDataFile.py`
   
 ## CMC7training.py
 Using the previously created Labeled Data, learn using SVM how to classify the different digits.
