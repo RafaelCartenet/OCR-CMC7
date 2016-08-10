@@ -19,10 +19,13 @@ Use :
 Using the previously created Labeled Data, learn using SVM how to classify the different digits.
 Train using trainProportion percent of the labeled datas, and the remaining ones to test the accuracy of the model
 Use :
-  python CMC7training.py
+  `python CMC7training.py`
 
 ## extractCMC7.py
 Extract the CMC7 code from a jpeg scan, using the previously trained SVM model.
 Use :
-  python extractCMC7.py filename.jpeg
+  `python extractCMC7.py filename.jpeg`
+  
+### Settings
+Check parameters.py
 
