@@ -1,16 +1,16 @@
-# Paramètres
+# Parameters
 
-# ----- Entrainement ------- #
-nbTrfiles = 59 # Nombres de chèques modèles
-fname = "trainingfiles/tr" # noms Fichiers : trX.jpeg
+# ------- Training -------- #
+nbTrfiles = 59 # Nb of Samples of Bank Checks
+fname = "trainingfiles/tr" # Files Names : trX.jpeg
 ext = ".jpeg" # extension
 trainProportion = 0.70
 
-# ----- Format Chèques ----- #
-digitW = 11 # Width en pixel d'un digit de chèque
-digitH = 15 # Height en pixel d'un digit de chèque
-nbDigits = 35 # Nb de digits contenus dans un code (symboles inclus)
-coordcheque = (145, 1118, 675, 1155) # Coordonnées de la zone ou chercher le CMC7
+# ----- Checks Format ----- #
+digitW = 11 # Width in pixel of one digit
+digitH = 15 # Height in pixel of one digit
+nbDigits = 35 # Number of Digits/Symbols in one code(symboles inclus)
+coordcheque = (145, 1118, 675, 1155) # Coordonnates of the zone including the CMC7 code
 digcode = {
 "0":"0",
 "1":"1",
@@ -24,5 +24,5 @@ digcode = {
 "9":"9",
 "a":"10",
 "b":"11",
-"c":"12"} # Codification des différents digits du chèque (10, 11, 12 : symboles)
-gaps = [7, 21] # Position des espaces dans le code
+"c":"12"} # bank checks codification (10, 11, 12 : symbols)
+gaps = [7, 21] # Spaces position in the code.

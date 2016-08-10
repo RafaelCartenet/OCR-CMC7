@@ -1,7 +1,7 @@
 from utils.CMC7 import *
 from utils.parameters import *
 
-# -------- Création fichier TrainingData ---------- #
+# ------------- Labeled Data Creation --------------- #
 DataFile = open("trainingfiles/trainingData.txt", "w")
 DataFile.write(str(nbDigits*nbTrfiles) + "\n")
 for i in range(nbTrfiles):

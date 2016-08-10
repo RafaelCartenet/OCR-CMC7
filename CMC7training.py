@@ -17,10 +17,10 @@ pourc_Tests = round(nbData_Tests / data.nbData, 2)
 InpVECTOR = data.InputVector[:nbData_Train]
 ExpVECTOR = data.ExpecVector[:nbData_Train]
 
-# Initialisation
+# Initialization
 CLF = svm.SVC(gamma = 0.001, C = 100)
 
-# Entrainement
+# Training
 CLF.fit(InpVECTOR, ExpVECTOR)
 
 # -------------- Testing Model -------------------- #
@@ -34,11 +34,11 @@ for i in range(nbData_Tests):
 accu = 100 * round(accu / nbData_Tests, 2)
 
 print()
-print("Rapport de test :")
+print("Tests Report :")
 print("----------------------------------------------")
-print("Nombre de digits total : " + str(data.nbData) + " (" + str(data.nbData//nbDigits) + " chèques)")
-print("Nombre de digits d'entrainement (" + str(100*pourc_Train) + "%) : " + str(nbData_Train))
-print("Nombre de digits testées        (" + str(100*pourc_Tests) + "%) : " + str(nbData_Tests))
+print("Total digits data : " + str(data.nbData) + " (" + str(data.nbData//nbDigits) + " bank checks)")
+print("Nb of training digits  (" + str(100*pourc_Train) + "%) : " + str(nbData_Train))
+print("Nb of testing digits   (" + str(100*pourc_Tests) + "%) : " + str(nbData_Tests))
 print()
 print("Accuracy : " + str(accu) + "%")
 
