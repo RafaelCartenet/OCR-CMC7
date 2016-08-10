@@ -1,4 +1,5 @@
 # OCR-CMC7
+## Rafael CARTENET
 Python Optical Character Recognition of CMC7 codes on Bank Checks using SVM machine learning from Scikit-learn library
 
 Libraries used :
@@ -28,5 +29,3 @@ Use :
 
 ### Settings
 Check parameters.py  
-
-Rafael CARTENET
