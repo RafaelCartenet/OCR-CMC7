@@ -4,7 +4,11 @@ class CMC7data:
         self.nbData = int(self.datafile.readline())
         self.InputVector = []
         self.ExpecVector = []
+        self.createVectors(sep, inpsize, outsize)
+
+    def createVectors(self, sep, inpsize, outsize):
         for _ in range(self.nbData):
             temp = list(map(float,self.datafile.readline().replace(",",".").split(sep)))
             self.InputVector.append(temp[:inpsize])
             self.ExpecVector.append(temp[inpsize:])
+        self.datafile.close()

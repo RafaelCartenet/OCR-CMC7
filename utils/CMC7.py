@@ -14,7 +14,7 @@ class CMC7:
         return matToVector(self.digits[i].m)
 
     def toTrainingString(self):
-        self.codejpg.im.show()
+        self.scan.im.show()
         res = ""
         code = input().replace(" ", "")
         while len(code)!= nbDigits:
