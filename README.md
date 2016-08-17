@@ -34,12 +34,22 @@ Once you extracted a the digit, you can simply convert it in a list of 0 and 1 (
 
 ### Creation of Labeled data
 Once i was able to extract nbDigits vectors representing my digits, i created Labeled Data, which means the classification of each vector. I created a TrainingFile.txt according to this format :
-`0 1 0 1 ..... 0 1 0 0 1 X`
-`1 1 0 0 ..... 1 1 1 0 0 Y`
-`0 1 0 1 ..... 0 1 1 1 1 Z`
+`0 1 0 1 ..... 0 1 0 0 1 X`  
+`1 1 0 0 ..... 1 1 1 0 0 Y`  
+0 1 0 1 ..... 0 1 1 1 1 Z`  
+Where X Y Z represents the value of the digit associated to the 0 1 list.
 
-
-
+### Training the model
+I used SVM method from scikit learn to classify digits. I divide my labeled data in two groups, training data and testing data.  
+I first use my training data to train the model and then calculate the efficiency of the model using the remaining datas.  
+Example of report :
+  
+Tests Report :  
+Total digits data : 2065 (59 bank checks)  
+Nb of training digits  (70.0%) : 1446  
+Nb of testing digits   (30.0%) : 619  
+  
+Accuracy : 100.0%  
 
 
 ## Files
