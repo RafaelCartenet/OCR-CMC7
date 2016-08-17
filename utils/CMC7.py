@@ -10,9 +10,11 @@ class CMC7:
         self.CMC7_01 = Matrix01(self.scan.matrix) # 0.04
         self.digits = self.CMC7_01.extractDigits() # 0.12
 
+    # returns a Vector containing all the pixel of the ith digit
     def digitToVector(self, i):
         return matToVector(self.digits[i].m)
 
+    # opens the scan, waits for a correct input which needs to be the CMC7 code
     def toTrainingString(self):
         self.scan.im.show()
         res = ""

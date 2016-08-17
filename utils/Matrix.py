@@ -1,3 +1,4 @@
+# converts a vector into a matrix according to dimensions dim.
 def vecIntoMatrix(Vec, dim):
     width = dim[0]
     height = dim[1]
@@ -7,11 +8,13 @@ def vecIntoMatrix(Vec, dim):
             mat[i][j] = Vec[(i)*width +j]
     return mat
 
+# converts vector to string
 def vecToString(vec):
     t = ""
     for i in range(len(vec)): t += str(vec[i])+" "
     return t
 
+# con
 def matToVector(matrix):
     height = len(matrix)
     width = len(matrix[0])
